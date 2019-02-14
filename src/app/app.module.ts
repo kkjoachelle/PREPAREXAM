@@ -10,6 +10,7 @@ import { CoursComponent } from './cours/cours.component';
 import { SpecialiteComponent } from './specialite/specialite.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { ConstantesFooter } from './footer/footer.constante';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule
   ],
   providers: [
-    Constantes
+    Constantes,
+    ConstantesFooter
   ],
   bootstrap: [AppComponent]
 })

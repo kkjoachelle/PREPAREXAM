@@ -6,6 +6,5 @@ export class Constantes{
     public readonly contact:string = "contactez-nous";
     public readonly subscribe:string = "inscription";
     public readonly connexion:string = "connexion";
-
     
 }
