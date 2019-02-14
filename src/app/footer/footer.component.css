@@ -1,10 +1,14 @@
+
+/* ==========================================================================
+   07. Footer
+   ========================================================================== */
 .footer {
 	text-align: center;
 	color: #fff;
 	font-weight: 500;
 }
 .footer .top {
-	background: #232323;
+	background:#4fc031;
 	padding: 48px 0;
 }
 .footer .bottom {
@@ -16,4 +20,35 @@
 }
 .footer .social-icons {
 	margin-bottom: 24px;
+}
+.footer .social-icons {
+	margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   08. Social Icons
+   ========================================================================== */
+
+.social-icon {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	color: #232323;
+	background: #fff;
+	border-radius: 100%;
+	box-shadow: 0 4px 12px rgba(0,0,0,.13);
+	margin: 0 4px;
+	text-align: center;
+}
+.social-icon:hover {
+	box-shadow: 0 4px 12px rgba(0,0,0,.13), 0 6px 10px rgba(0,0,0,.3);
+}
+.footer .social-icon {
+	box-shadow: 0 4px 12px rgba(0,0,0,.13), 0 6px 10px rgba(0,0,0,.3);
+}
+.social-icon:hover {
+	background: #7c4dff;
+	color: #fff;
 }
