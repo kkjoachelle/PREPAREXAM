@@ -1,0 +1,19 @@
+.footer {
+	text-align: center;
+	color: #fff;
+	font-weight: 500;
+}
+.footer .top {
+	background: #232323;
+	padding: 48px 0;
+}
+.footer .bottom {
+	background: #1c1c1c;
+	line-height: 50px;
+}
+.footer h4 {
+	color: #fff;
+}
+.footer .social-icons {
+	margin-bottom: 24px;
+}
