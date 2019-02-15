@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConstantesFooter } from './footer.constante';
 
 @Component({
   selector: 'app-footer',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constantes;
+  constructor(constantes : ConstantesFooter) { 
+   
+    constantes = new ConstantesFooter();
+    this.constantes = constantes;
+
+  }
 
   ngOnInit() {
   }

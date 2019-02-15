@@ -1,8 +1,7 @@
-
 /* ==========================================================================
    07. Footer
    ========================================================================== */
-.footer {
+   .footer {
 	text-align: center;
 	color: #fff;
 	font-weight: 500;
@@ -49,6 +48,6 @@
 	box-shadow: 0 4px 12px rgba(0,0,0,.13), 0 6px 10px rgba(0,0,0,.3);
 }
 .social-icon:hover {
-	background: #7c4dff;
+	background: #ff9c00;
 	color: #fff;
 }
