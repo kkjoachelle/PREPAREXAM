@@ -92,11 +92,11 @@ p {
 	border-bottom: 5px solid transparent;
 }
 .main-nav ul>li a:hover {
-	border-bottom: 5px solid #7c4dff;
+	border-bottom: 5px solid #ff9c00;
 	text-decoration: none;
 }
 .main-nav ul>li.active a {
-	border-bottom: 5px solid #7c4dff;
+	border-bottom: 5px solid #ff9c00;
 	text-decoration: none;
 }
 .header-action-button-wrapper {
