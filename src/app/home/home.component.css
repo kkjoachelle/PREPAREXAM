@@ -1,0 +1,98 @@
+.sections {
+	display: block;
+	height: auto;
+	overflow: hidden;
+	position: static;
+	word-wrap: break-word;
+}
+.sections-wrapper {
+	display: block;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	transition: .5s;
+}
+
+.sections-wrapper > section {
+	width: 1600px;
+	height: auto;
+	float: left;
+	padding: 72px 12px;
+}
+.sections-wrapper > section.no-padding-bottom {
+	padding-bottom: 0;
+}
+.sections-wrapper > section.no-padding-bottom .padding-fix {
+	padding-bottom: 72px;
+}
+
+.section-img {
+	max-height: 650px;
+	margin: 0 auto;
+}
+.vertical-center {
+	display: table-cell;
+	vertical-align: middle;
+	float: none;
+}
+.section-nav {
+	position: fixed;
+	bottom: 80px;
+	right: 60px;
+	z-index: 9;
+}
+
+.solid-button {
+	font-size: 15px;
+	line-height: 26px;
+	padding: 11px 29px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.solid-button:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,.3);
+}
+.solid-button.purple {
+	background: #7c4dff;
+	color: #fff;
+}
+.solid-button.white {
+	background: #fff;
+	color: #232323;
+}
+
+
+.solid-button:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,.3);
+}
+.solid-button.purple {
+	background:#ff9c00;
+	color: #fff;
+}
+.solid-button.white {
+	background: #fff;
+	color: #232323;
+}
+.solid-button.dark {
+	background: #232323;
+	color: #fff;
+}
+.solid-button.white-purple {
+	background: #fff;
+	color: #232323;
+}
+.solid-button.white-purple:hover {
+	background: #7c4dff;
+	color: #fff;
+}
+.solid-button.small {
+	font-size: 12px;
+	padding: 2px 20px;
+}

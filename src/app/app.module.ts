@@ -1,3 +1,5 @@
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { Constantes } from './menu/menu.constante';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -11,7 +13,9 @@ import { SpecialiteComponent } from './specialite/specialite.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConstantesFooter } from './footer/footer.constante';
-
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,12 +25,30 @@ import { ConstantesFooter } from './footer/footer.constante';
     SpecialiteComponent,
     MenuComponent,
     FooterComponent,
+    LoginComponent,
+    HomeComponent,
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      {
+        path : 'accueil',
+        component: HomeComponent
+      },
+      {
+        path : 'login',
+        component: LoginComponent
+      }
+
+    ])
   ],
+  entryComponents:[],
+  
   providers: [
     Constantes,
     ConstantesFooter
