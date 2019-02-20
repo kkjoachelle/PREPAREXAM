@@ -2,34 +2,35 @@
   <div class="row">
       <div class="col-sm-4"></div>
       <div class="col-sm-4">
-           <form>
+           <form [formGroup]="form" (ngSubmit)="tester(form)">
                <div class="password form-group">
                   <div class="row">
                       <label for="login">Votre login :</label> 
-                      <input
+                      <input formControlName="login"
                        id="login"
                        type="text" 
-                       class="form-control">
-                       
+                       class="form-control" placeholder="Saisissez votre  login ">
                    </div>
                </div>
                <div class="password form-group">
                   <div class="row">
                       <label for="password">Votre mot de passe:</label> 
-                      <input
+                      <input formControlName="password"
                        id="password"
                        type="password" 
-                       class="form-control">
-                       
+                       class="form-control" placeholder="Saisissez votre mot de passe">
                    </div>
                </div>
                <div class="form-group">
-                 <div class="row">
-                    <button class="btn btn-primary" type="submit">Sign Up</button>
-                 </div>
-                   
+            
+                        
+                <div class="row">
+                    <button class="btn btn-primary" type="submit">Connectez-vous</button>
+                </div>  
+              
               </div>
            </form>
       </div>
   </div>
 </div>
+

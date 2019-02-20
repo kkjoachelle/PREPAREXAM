@@ -15,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ConstantesFooter } from './footer/footer.constante';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
+import { loginService } from './communs/services/login.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     LoginComponent,
     HomeComponent,
+    
    
   ],
   imports: [
@@ -35,6 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    
     RouterModule.forRoot([
       {
         path : 'accueil',
@@ -51,7 +54,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   
   providers: [
     Constantes,
-    ConstantesFooter
+    ConstantesFooter,
+    loginService,
+    
   ],
   bootstrap: [AppComponent]
 })
