@@ -1,0 +1,21 @@
+.list-unstyled li {
+	margin-bottom: 12px;
+}
+.list-icons {
+	padding-left: 0;
+	margin-left: 36px;
+	list-style-type: none;
+}
+.list-icons > li {
+	position: relative;
+}
+.list-icons > li > i {
+	position: absolute;
+	left: -36px;
+	width: 36px;
+	top: 2px;
+	text-align: center;
+	color: #232323;
+	font-size: 18px;
+	vertical-align: middle;
+}

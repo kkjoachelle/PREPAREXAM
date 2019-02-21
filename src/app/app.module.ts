@@ -16,7 +16,9 @@ import { ConstantesFooter } from './footer/footer.constante';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule, FormGroup } from '@angular/forms';
-import { loginService } from './communs/services/login.service';
+import { LoginService } from './communs/services/login.services';
+import { ContactComponent } from './contact/contact.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,7 @@ import { loginService } from './communs/services/login.service';
     FooterComponent,
     LoginComponent,
     HomeComponent,
+    ContactComponent,
     
    
   ],
@@ -44,6 +47,10 @@ import { loginService } from './communs/services/login.service';
         component: HomeComponent
       },
       {
+        path : 'contact',
+        component: ContactComponent
+      },
+      {
         path : 'login',
         component: LoginComponent
       }
@@ -55,8 +62,7 @@ import { loginService } from './communs/services/login.service';
   providers: [
     Constantes,
     ConstantesFooter,
-    loginService,
-    
+    LoginService
   ],
   bootstrap: [AppComponent]
 })

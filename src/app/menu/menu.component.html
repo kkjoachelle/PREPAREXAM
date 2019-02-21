@@ -132,8 +132,8 @@
 						<li><a href="">{{ constantes.about }}</a></li>
 						<li><a href="">{{ constantes.partenaires }}</a></li>
 						<li><a href="">{{ constantes.advice }}</a></li>
-						<li><a href="">{{ constantes.contact }}</a></li>
-						<li ><a href="">{{ constantes.blog }}</a></li>
+						<li><a routerLink="/contact">{{ constantes.contact }}</a></li>
+						<li *ngIf="isLoggin"><a href="">{{ constantes.blog }}</a></li>
 						<li><a routerLink="/login">{{ constantes.connexion }}</a></li>
 					</ul>
 				</nav> <!-- end .main-nav -->

@@ -148,3 +148,17 @@
 		right: -110%;
 	}
 }
+
+.header-action-button-wrapper {
+	float: right;
+	width: 120px;
+	height: 70px;
+	display: inline-block;
+}
+
+.header-action-button {
+	position: absolute;
+	bottom: -30px;
+	right: 60px;
+	z-index: 99;
+}

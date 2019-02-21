@@ -1,3 +1,4 @@
+import { LoginService } from './../communs/services/login.services';
 import { Constantes } from './menu.constante';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,14 +10,18 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   constantes ;
-   
-  constructor(constantes : Constantes) { 
+  isLoggin;
+  constructor(constantes : Constantes, private service : LoginService) { 
     constantes = new Constantes();
     this.constantes = constantes;
   }
 
   ngOnInit() {
-
+   this.isLoggin = this.service.tester();
+   //this.isLoggin = false;
   }
+ 
+ 
+
 
 }
